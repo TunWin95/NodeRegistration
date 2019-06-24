@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src = "login.js" type="text/javascript"></script>
+</head>
+<body>
+  
+    <h2 class="w3-text-blue"><span id="edname"><%= editData.name %></span>! You can edit your data at here!!!</h2>
+    <div class="w3-display-container edit-con">
+    <p>
+    <label class="w3-text-blue"><b>Password</b></label>
+    <input class="w3-input w3-border"  id="upass" name="pass" type="password" value="<%= editData.pass %>" required>
+    </p>
+    <p>
+    <p>
+    <label class="w3-text-blue"><b>First Name</b></label>
+    <input class="w3-input w3-border"  id="ufname" name="fname" type="text" value="<%= editData.first_name %>" required>
+    </p>
+    <p>
+    <label class="w3-text-blue"><b>Last Name</b></label>
+    <input class="w3-input w3-border"  id="ulname" name="laname" type="text" value="<%= editData.last_name %>" required>
+    </p>
+    <p>
+    <label class="w3-text-blue"><b>Gender</b></label>
+    <input class="w3-input w3-border"  id="ugender" name="gender" type="text" value="<%= editData.gender %>" required>
+    </p>
+    <p>
+    <label class="w3-text-blue"><b>Email</b></label>
+    <input class="w3-input w3-border"  id="umail" name="mail" type="email" value="<%= editData.mail %>" required>
+    </p>
+    <p>
+  <button class="w3-btn w3-blue" id="updateVal">Update</button></p>
+</div>
+</body>
+</html>

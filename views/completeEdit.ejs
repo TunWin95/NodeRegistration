@@ -25,18 +25,9 @@ $(document).ready(function(){
 </script>
 </head>
 <body>
-<p>Welcome : <span id="pname"><%= profileData.name %></span> Your profile is Completed following is your details<br></p>
-<div>
-            Password:  <%= profileData.pass %><br>
-            First Name:<%= profileData.first_name %><br>
-            Last Name: <%= profileData.last_name %><br>
-            Gender:    <%= profileData.gender %><br>
-            Email:     <%= profileData.mail %><br>
-            Phone:    <%= profileData.phone %><br>
+<p><span id="pname"><%= editData.name %></span>! Your profile has been updated!!!<br></p>
 <div>
 <button class="w3-btn w3-blue" id="backtohome">Back to Home</button></p>
-<button class="w3-btn w3-blue" id="editProfile">Edit Your Profile</button></p>
-<div class="editDiv">
 </div>
 </body>
 </html>
